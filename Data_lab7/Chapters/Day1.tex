@@ -1,0 +1,50 @@
+\chapter{My Chapter learning}
+
+Dear Diary,
+It was a wonderful experience for me to lot important things in the class. I would like
+to share some the important things.
+\section{Math class}
+The equation of Latent Dirichlet allocation is very helpful in natural language processing
+for modelling a generative statistical model. The equation of the model is shown below
+:-
+\begin{equation}
+{\textit{p}}\big(\beta,\theta,\textit{z},\textit{w} | \alpha ,\eta \big) = \prod_{i=1}^K{\textit{p}}\big(\beta_\textit{i}| \eta\big)  \prod_{d=1}^D{\textit{p}}\big(\theta_\textit{d}, \alpha\big) \big( \prod_{n=1}^N{\textit{p}}\big(\textit{z}_\textit{d,n}| \theta_\textit{d}\big) {\textit{p}}\big(\textit{w}_\textit{d,n}| \beta_\textit{1:K}, \textit{z}_\textit{d,n} \big)\big)
+\end{equation}
+
+
+
+Also the formula of cumulative distribution function in case of uniform probability measure is :-
+sure is :-
+\begin{equation}
+\textit{F(x)} = \begin{cases}
+        0, & \text{0, if $x<a$}\\
+        \frac{x-a}{b-a}, & \text{if $a \leq x \leq b$}\\
+        1, & \text {if $x>b$}\\
+    \end{cases}    
+\end{equation}
+\clearpage
+
+\section{Counting sort}
+Counting sort is one of the nice algorithm which is not comparison based sorting. Below
+is the counting sort algorithm :-
+
+\begin{algorithm}
+\caption{Counting Sort}\label{alg:euclid}
+\begin{algorithmic}[1]
+\Procedure{Counting-Sort}{A, B, k}
+\State Let C[0,...,k] be a new array
+\State \textbf{for} i=0 to k : \textbf{do}
+\State     C[i] = 0
+\State \textbf{return} $b$\Comment{Initializing step}
+\State \textbf{for} j=1 to A.length or n : \textbf{do}
+\State    C[A[j]] = C[A[j]] + 1
+\State \textbf{return} $b$\Comment{Maintaining count}
+\State \textbf{for} i=1 to k: \textbf{do}
+\State    C[i] = C[i] + C[i − 1]
+\State \textbf{for} j=n or A.length down to 1: \textbf{do}
+\State    B[C[A[j]]] = A[j]
+\State    C[A[j]] = C[A[j]] − 1
+
+\end{algorithmic}
+\end{algorithm}
+

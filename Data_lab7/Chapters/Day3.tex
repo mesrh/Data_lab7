@@ -1,0 +1,81 @@
+\chapter{Miscellaneous activity}
+\section{My semester expense}
+I want to prepare my semester expense falling mainly into below categories:-
+
+
+\textbf{Semester} fee This include my tution fee\\
+\textbf{Mess expense} My mess fee.\\
+\textbf{Stationary} My stationary requirement\\
+\textbf{Transportation} Mainly include my home trip\\
+\textbf{Entertainment} Very less, because I am student of IIT Bombay\\
+\textbf{Miscellaneous} Other important things\\
+
+Below table describe my expanse:-
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{ |p{4cm}|p{4cm}|  }
+ \hline
+ \multicolumn{2}{|c|}{Per semester Expanse} \\
+ \hline
+Expanse due to & Amount\\
+ \hline
+ 
+Semester fee   & 18000\\
+Mess expense & 20000\\
+Stationary & 7000\\
+Transportation & 9000\\
+Entertainment & 5000\\
+Miscellaneous & 4000\\
+ \hline
+\end{tabular}
+\caption{Table to test captions and labels}
+\label{table:1}
+\end{table}
+
+\clearpage
+\section{My favorite recipe}
+I like to learn new cooking item. I went through recipe of preparing stu for aloo
+paratha. Below is the recipe.\\\\
+
+
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+\begin{center}   
+\begin{tikzpicture}[node distance = 2cm, auto]
+    % Place nodes
+  \node [cloud] (start) {start};
+      
+    \node [block, below of=start] (boil) {Boil potato in pressure cooker};
+    \node [block, below of=boil, node distance=2.5cm] (mash) {Mash The potato nicely};
+    \node [block, left of=mash, node distance=3cm] (addwater) {Add little water};
+    \node [decision, below of=mash] (softend) {Has the mash softend};
+    \node [block, right of=softend, node distance=4cm] (mix) {Mix with the other spices};
+    \node [block, below of=softend, node distance=4cm] (ready) {Stuff is ready for preparing Aloo Paratha};
+      \node [cloud, below of=ready, node distance=3cm] (stop) {End};
+    % Draw edges
+    \path [line] (start) -- (boil);
+    \path [line] (boil) -- (mash);
+    \path [line] (mash) -- (softend);
+    \path [line] (softend) -| node [near start] {No} (addwater);
+    \path [line] (addwater) |- (mash);
+    \path [line] (softend) -- node {Yes}(mix);
+    \path [line] (mix) |- (ready);
+    \path [line] (ready) |- (stop);
+
+\end{tikzpicture}
+\end{center}   
+
+\captionof{figure}{Stuff preparation of Aloo Paratha}
+
+\end{center}\end{minipage}
+
+
